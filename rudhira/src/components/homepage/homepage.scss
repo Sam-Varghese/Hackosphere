@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+@mixin centerContent(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin border(){
+    border: 2px solid;
+}
+
+.leftSection{
+    @include centerContent();
+    // @include border();
+    width: 40%;
+    height: 100vh;
+    background-color: #F66D6D;
+}
+
+.title{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 8vw;
+}
+
+.moto{
+    font-size: 3vw;
+}
+
+.findButton{
+    background-color: #BF0000;
+    width: 20vw;
+    @include centerContent();
+    padding: 1vw;
+    border-radius: 1vw;
+    color: white;
+    margin-top: 2vw;
+}
+
+.homepageDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightSection{
+    @include centerContent();
+    @include border();
+}
+
+.image2{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: fit-content;
+    @include border();
+}
